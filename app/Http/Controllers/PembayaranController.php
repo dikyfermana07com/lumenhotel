@@ -71,7 +71,7 @@ class PembayaranController extends Controller
       return response()->json($validator->errors(), 400);
     }
 
-    $pembayaran = Pembayaran::create($input);
+    $pembayaran = pembayaran::create($input);
 
     return response()->json($pembayaran, 200);
   }
